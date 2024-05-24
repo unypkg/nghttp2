@@ -11,7 +11,7 @@ apt install -y autopoint
 wget -qO- uny.nu/pkg | bash -s buildsys
 
 ### Installing build dependencies
-unyp install libxml2 python expat
+#unyp install libxml2 python expat
 
 #pip3_bin=(/uny/pkg/python/*/bin/pip3)
 #"${pip3_bin[0]}" install meson
@@ -82,7 +82,6 @@ unset LD_RUN_PATH
 
 ./configure --prefix=/uny/pkg/"$pkgname"/"$pkgver" \
     --disable-static  \
-    --with-libxml2 \
     --enable-lib-only \
     --docdir=/usr/share/doc/nghttp2
 
